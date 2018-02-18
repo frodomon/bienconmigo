@@ -1,0 +1,323 @@
+/*--------------------MEDIA QUERY-----------------------*/
+@media only screen and (min-width: 2560px){
+	#grid[data-columns]::before{
+		content: '4 .column.size-1of4';
+	}
+	.togglemenu{
+  display:none;
+	}
+	.responsive-menu{
+	  display:none;
+	}
+}
+@media only screen and (min-width: 1716px) and (max-width: 2559px){
+	#grid[data-columns]::before{
+		content: '4 .column.size-1of4';
+	}
+	.togglemenu{
+  display:none;
+	}
+	.responsive-menu{
+	  display:none;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1715px){
+	#grid[data-columns]::before{
+		content: '3 .column.size-1of3';
+	}
+	.togglemenu{
+  display:none;
+	}
+	.responsive-menu{
+	  display:none;
+	}
+	.mission,
+	.vision,
+	.about-contact{
+		width:100%;
+		margin:0;
+		height:auto;
+	}
+	.mission,
+	.about-contact{
+		margin-bottom: 1.5rem;
+	}
+	.about_us_p{
+		text-align: center;
+	}
+	.about-image{
+		width:100%;
+		height:400px;
+		margin:0;
+	}
+	#footer-logo {
+    height: 100px;
+	}
+}
+@media only screen and (max-width: 767px){
+	html{
+		font-size: 14px;
+	}
+	.hide-responsive{
+		display: none;
+	}
+	.show-responsive{
+		display:block;
+	}
+	#grid[data-columns]::before{
+		content: '1 .column.size-1of1';
+	}
+	.right-col,.left-col{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.pagination{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	
+	/*-------------HEADER-----*/
+	header{
+		height:auto;
+		overflow-y: auto;
+	}
+	.header-top{
+		display:none;
+	}
+	.h-left,
+	.h-right{
+		display:none;
+	}
+	.h-mid{
+		width:85%;
+	}
+	.header-logo{
+		float:right;
+		width:85%;
+	}
+	.header-menu{
+		float:right;
+		width:100%;
+		height:80px;
+		background-color: #222222;
+	}
+	.h-logo{
+		width:85%;
+		float:left;
+		height:100%;
+	}
+	#logo-mobile{
+		height: 45px;
+		display: block;
+	}
+	.h-menu{
+		display:none;
+	}
+	.header-searchbar{
+		width:50%;
+		margin: 0 25%;
+		display:none;
+	}
+	#search_text{
+		text-align: center;
+		width:85%;
+	}
+	.sf-menu{
+		display: none;
+	}
+	.togglemenu{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		width: 15%;
+		margin: 0 5%;
+		text-align: left;
+		height:100%;
+	}
+	.togglebar{
+		border:none;
+		background-color: #222222;
+	}
+
+	/*---FOOTER-----*/
+	.footer-bottom-right,
+	.footer-bottom-left{
+		text-align: center;
+		width:100%;
+	}
+	.footer-top-left,
+	.footer-top-center,
+	.footer-top-right{
+		min-height: auto;
+	}
+	.footer-logo{
+		width:70%;
+		margin:1rem 5%;
+	}
+	#footer-logo{
+		width:100%;
+		height:auto;
+	}
+	.trademark-text{
+		width:80%;
+		margin:0 10%;
+	}
+
+	.related_post{
+		width: 100%;
+		margin-right: 0;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	/*--------HOME SLIDER-----------*/
+	.slide-content{
+		width:90%;
+	}
+	/*--------HOME ABOUT-----------*/
+	#about{
+		padding: 2.5rem 0 0 0;
+	}
+	#news{
+		padding: 0 0 2.5rem 0;
+	}
+	.about-img{
+		display:none;
+	}
+	.about-content{
+		height:auto;
+	}
+	.about-text-l{
+		width:100%;
+		padding-right: 0;
+	}
+	.about-text-r{
+		width:100%;
+		padding-left: 0;
+	}
+	.about-top{
+		height: auto;
+	}
+	.mission,
+	.vision{
+		width:100%;
+		margin:0;
+		height:auto;
+	}
+	.mission{
+		margin-bottom: 1.5rem;
+	}
+	
+	.service{
+		width:100%;
+		margin: 1rem 0;
+	}
+	.service-thumbnail{
+		height:160px;
+	}
+	.service-content{
+		height:auto;
+	}
+	.news-post{
+		width:100%;
+		margin: 1rem 0;
+	}
+	.news-thumbnail{
+		height:160px;
+	}
+	.slide-title{
+		font-size: 1.5rem;
+	}
+	.slide-description{
+		font-size: 1rem;
+	}
+	.client{
+		width:100%;
+		margin:0.75rem 0;
+	}
+	.service-img,
+	.service-page-content{
+		width:100%;
+		margin: 0.75rem 0;
+	}
+	.service-img{
+		height:250px;
+	}
+	.service-page-content{
+		height:auto;
+		padding:2rem 5%;
+	}
+	#main{
+	padding: 3rem 5% !important;
+	}
+	/*-----  ABOUT   ----*/
+	#about_us,
+	#health-coaching{
+		padding: 5rem 5% 1rem 5%;
+	}
+	.page-title{
+		padding:1rem 0;
+	}
+	.about-top,
+	.about-bottom{
+		padding:1rem 0 0 0;	
+		margin-bottom: 0;
+	}
+	/*-----  Health Coaching   ----*/
+	.video-container{
+		height:300px;
+		padding: 1rem 0;
+	}
+	.hc-container{
+		padding-bottom: 1rem;
+	}
+	/*-----  Blog   ----*/
+	#blog{
+		padding: 1.5rem 0;
+	}
+	#container,
+	#contact_us,
+	#appointment{
+		padding: 5rem 5% 1rem 5%;
+	}
+	/*-----  Productos   ----*/
+	#products{
+		padding: 5rem 10% 2rem 10%;
+	}
+	/*-----  Contacto   ----*/
+	.cf-inline{
+		width:100%;
+		margin: 0.5rem 0 0 0;
+	}
+	.cf-inline:first-child{
+		margin:0;
+	}
+	.gmaps{
+		width: 100%;
+		margin:0;
+		height:auto;
+		margin-bottom: 1.5rem;
+		display: none;
+	}
+	.gm{
+		height:300px;
+	}
+	.contact-form{
+		width: 100%;
+		margin:0;
+		height:auto;
+		padding: 2rem 0 1rem 0;
+	}
+	.contact-center,
+	.contact-right{
+		padding-top:1rem;
+	}
+	.cf-button{
+		margin-bottom: 0;
+	}
+	/*** BLOG ARTICLE***/
+	#article{
+		width:100%;
+	}
+}
+
