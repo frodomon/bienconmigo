@@ -34,10 +34,7 @@
 
 	function dohko_excerpt(){
  		global $post;
-    if (is_singular()) {?>
-      <div class='separator'></div>
-    <?php }
-  ?>	
+    ?>	
   	<div class="index-post-excerpt group">
   		<?php the_excerpt(); ?>
     </div>

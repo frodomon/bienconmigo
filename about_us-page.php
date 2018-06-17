@@ -12,7 +12,7 @@ get_header();  ?>
 		<div class="about-text-l">
 			<p class="content"><?php if($p1): print $p1; ?><?php endif; ?></p>
 			<p class="content"><?php if($p1): print $p2; ?><?php endif; ?></p>
-			<p class="content">Conoce más acerca del <a href="<?php echo get_page_link( get_page_by_title( '¿Qué es Health Coaching?' )->ID); ?>">Health Coaching</a></p>
+			<p class="content">Conoce más acerca del <a href="<?php echo get_page_link( get_page_by_title( '¿Qué es un Health Coach?' )->ID); ?>">Health Coaching</a></p>
 		</div>
 		<div class="about-img w-img">
 			<img src="<?php print IMAGES.'/About - Bien Conmigo.png'; ?>" alt="Bien Conmigo" />

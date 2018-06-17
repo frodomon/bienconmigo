@@ -30,11 +30,11 @@
       <p class='post-author'>Por <?php the_author_posts_link(); ?></p>
       <p class='post-date'><?php echo get_the_date('j F Y'); ?></p>
     </div>
+    <div class="separator"></div>
     
   <?php }
 	function dohko_meta_single(){
   ?>
-    <div class="separator"></div>
     <div class='categories group'>
       <?php
       	the_category();
@@ -45,7 +45,6 @@
   function dohko_social_share() { 
 		global $post;
   ?>
-	  <div class="separator"></div>
 	  <div class='share_social'>
 	  	<p class="negrita">Compartir:</p>
       <div class="social_share_links">
@@ -67,7 +66,6 @@
   function dohko_social_share_2() { 
     global $post;
   ?>
-    <div class="separator"></div>
     <div class='share_social'>
       <p class="negrita">Compartir:</p>
       <div class="social_share_links">
@@ -147,15 +145,15 @@
               }
               else { ?>
                 <?php if ( has_post_thumbnail()) { 
-                  $post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?> 
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                    <div class='related_thumbnail' style="background: url('<?php echo $post_thumbnail_url; ?>') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;">
-                    </div>
+                  $post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>                   
+                  <div class='related_thumbnail' style="background: url('<?php echo $post_thumbnail_url; ?>') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;">
+                    <?php dohko_meta_tags_index() ?>
+                  </div>
+                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">                    
                   </a>  
-              <?php } } ?>
-              <a href="<?php the_permalink(); ?>">
-                <h4 class="no-margin rp_title"><?php the_title(); ?></h4>
-              </a>
+              <?php } } 
+                index_post_title();
+              ?>
           </div>
         <?php }
         echo '</div>';
@@ -163,6 +161,7 @@
     $post = $orig_post;
     wp_reset_query(); 
   
+
 
   }
 ?>

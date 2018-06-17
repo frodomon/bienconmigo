@@ -413,6 +413,9 @@
       footer a:hover{
         color: <?php echo $footer_text_hover; ?>; 
       }
+      .ig-link{
+        color: <?php echo $main_color; ?>;
+      }
       .sn_icons,
       .sn_icons:visited{
         color: <?php echo $h_text; ?>; 
@@ -428,6 +431,10 @@
       .sn_f_icons:hover,
       .sn_f_icons:focus{
         color: <?php echo $h_text; ?>; 
+      }
+      /* SLIDER */
+      .btn-cta{
+        background-color: <?php echo $main_color; ?>;
       }
       /* FRONT-PAGE */
       .section-separator{
@@ -511,16 +518,16 @@
         border-color: <?php echo $aux_1; ?>;
       }
       /* SINGLE */
-      .post .post-title h2{
+      #article .post-title h2{
         color: <?php echo $main_color; ?>;
       }
-      .post .post-date{
-        color: <?php echo $main_color; ?>;
-      }
-      .post .post-author{
+      #article .post-date{
         color: <?php echo $h_text; ?>;
       }
-      .post .post-author a{
+      #article .post-author{
+        color: <?php echo $h_text; ?>;
+      }
+      #article .post-author a{
         color: <?php echo $h_text; ?>;
       }
       .separator{
@@ -531,6 +538,12 @@
       }
       .related_post{
         background-color: <?php echo $main_color; ?>;
+      }
+      .related_post .index-post-title a h2{
+        color: <?php echo $main_color; ?>;
+      }
+      .related_post .rp_title{
+        background-color: <?php echo $main_color; ?>; 
       }
       .related_post .rp_title a{
         color: <?php echo $main_text; ?>; 
@@ -571,6 +584,12 @@
         outline-color: <?php echo $main_color; ?>;
       }
       /*----------- Media query ------------*/
+
+      @media only screen and (min-width: 768px) and (max-width: 1023px){
+        .header-menu{
+          background-color: <?php echo $bg_footer; ?>;
+        }
+      }  
       @media only screen and (max-width: 767px){
       .header-menu{
         background-color: <?php echo $bg_footer; ?>;

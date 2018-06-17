@@ -20,10 +20,63 @@
 	.responsive-menu{
 	  display:none;
 	}
+	.very-long-text{
+		height: 500px
+	}
+	.very-long-img{
+		height: 500px
+	}
+	.testimonials-l,
+	.testimonials-r{
+		height:300px;
+	}
 }
-@media only screen and (min-width: 768px) and (max-width: 1715px){
+@media only screen and (min-width: 1024px) and (max-width: 1715px){
 	#grid[data-columns]::before{
 		content: '3 .column.size-1of3';
+	}
+	/*------------------ASTRID -------------*/
+	.about-img,
+	.about-text-l,
+	.about-text-r{
+		height: 480px;
+	}
+	.long-text{
+		height: 540px;
+	}
+	/*------------------TESTIMONIALS -------------*/
+	.testimonials{
+		width:70%;
+		margin:0 15%;
+	}
+	.testimonials-l,
+	.testimonials-r{
+		height: 250px;
+	}
+	.img-testi{
+		display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+	}
+	.very-long-text{
+		height: 750px;
+	}
+	.very-long-img{
+		height: 750px;
+	}
+	.very-long-img img{
+		height: 480px;
+	}
+	.reservar_cita{
+		height: 600px;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	#grid[data-columns]::before{
+		content: '2 .column.size-1of2';
 	}
 	.togglemenu{
   display:none;
@@ -31,6 +84,70 @@
 	.responsive-menu{
 	  display:none;
 	}
+
+	/*-------------HEADER-----*/
+	header{
+		height:auto;
+		overflow-y: auto;
+	}
+	.header-top{
+		display:none;
+	}
+	.h-left,
+	.h-right{
+		display:none;
+	}
+	.h-mid{
+		width:85%;
+	}
+	.header-logo{
+		float:right;
+		width:85%;
+	}
+	.header-menu{
+		float:right;
+		width:100%;
+		height:80px;
+		background-color: #222222;
+	}
+	.h-logo{
+		width:85%;
+		float:left;
+		height:100%;
+	}
+	#logo-mobile{
+		height: 45px;
+		display: block;
+	}
+	.h-menu{
+		display:none;
+	}
+	.header-searchbar{
+		width:50%;
+		margin: 0 25%;
+		display:none;
+	}
+	#search_text{
+		text-align: center;
+		width:85%;
+	}
+	.sf-menu{
+		display: none;
+	}
+	.togglemenu{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		width: 15%;
+		margin: 0 5%;
+		text-align: left;
+		height:100%;
+	}
+	.togglebar{
+		border:none;
+		background-color: #222222;
+	}
+	
 	.mission,
 	.vision,
 	.about-contact{
@@ -52,6 +169,57 @@
 	}
 	#footer-logo {
     height: 100px;
+	}
+	.very-long-text{
+		height: 570px
+	}
+	.very-long-img{
+		height: 570px
+	}
+	.vertical-img img{
+		height:100%;
+	}
+	.about-img{
+		display:none;
+	}
+	.about-content{
+		height:auto;
+	}
+	.about-text-l{
+		width:100%;
+		padding-right: 0;
+		height:auto;
+	}
+	.about-text-r{
+		width:100%;
+		padding-left: 0;
+		height:auto;
+	}
+	/*------------------TESTIMONIALS-----------*/
+	.testimonials{
+		width:100%;
+		margin:0;
+	}
+	.img-testi{
+		display: none;
+	}
+	.testimonials-l,
+	.testimonials-r{
+		padding-left: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	/*------------------CONTACTo-----------*/
+	.contact-form{
+		width: 100%;
+		margin:0;
+		height:auto;
+		padding: 2rem 0 1rem 0;
+	}
+	.contactame,
+	.reservar_cita{
+		display:none;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -179,7 +347,7 @@
 		padding: 2.5rem 0 0 0;
 	}
 	#news{
-		padding: 0 0 2.5rem 0;
+		padding: 2.5rem 0;
 	}
 	.about-img{
 		display:none;
@@ -190,10 +358,12 @@
 	.about-text-l{
 		width:100%;
 		padding-right: 0;
+		height:auto;
 	}
 	.about-text-r{
 		width:100%;
 		padding-left: 0;
+		height:auto;
 	}
 	.about-top{
 		height: auto;
@@ -207,7 +377,22 @@
 	.mission{
 		margin-bottom: 1.5rem;
 	}
-	
+	/*------------------TESTIMONIALS-----------*/
+	.testimonials{
+		width:100%;
+		margin:0;
+	}
+	.img-testi{
+		display: none;
+	}
+	.testimonials-l,
+	.testimonials-r{
+		padding-left: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
 	.service{
 		width:100%;
 		margin: 1rem 0;
@@ -278,7 +463,7 @@
 	#container,
 	#contact_us,
 	#appointment{
-		padding: 5rem 5% 1rem 5%;
+		padding: 2.5rem 5% 2.5rem 5%;
 	}
 	/*-----  Productos   ----*/
 	#products{
@@ -315,9 +500,14 @@
 	.cf-button{
 		margin-bottom: 0;
 	}
+	.contactame,
+	.reservar_cita{
+		display:none;
+	}
 	/*** BLOG ARTICLE***/
 	#article{
 		width:100%;
+		margin:0;
 	}
 }
 

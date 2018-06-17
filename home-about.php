@@ -12,7 +12,7 @@
 			<?php if($hab_msg3): ?><p class="content"><?php print $hab_msg3; ?></p><?php endif; ?>
 			<?php if($hab_msg4): ?><p class="content"><?php print $hab_msg4; ?></p><?php endif; ?>
 		</div>
-		<div class="home-about-img about-img">
+		<div class="home-about-img about-img w-img">
 		</div>
 	</div>
 </section>

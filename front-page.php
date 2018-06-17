@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-</section>
 <?php get_template_part( 'home', 'slider' ); ?>
 <?php get_template_part( 'home', 'about' ); ?>
 <?php get_template_part( 'home', 'blog' ); ?>

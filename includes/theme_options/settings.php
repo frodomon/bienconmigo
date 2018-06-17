@@ -7,6 +7,7 @@
     add_submenu_page("dohko-theme-options", "Footer Theme Options", "Footer Options", "manage_options", "dohko-footer-options", "dohko_footer_options_page");
     add_submenu_page("dohko-theme-options", "Health Coaching Options", "Health Coaching Options", "manage_options", "dohko-health-coaching", "dohko_health_coaching_options_page");
     add_submenu_page("dohko-theme-options", "Social Profile Options", "Social Profile", "manage_options", "dohko-social-profile", "dohko_social_profile_page");
+    add_submenu_page("dohko-theme-options", "Testimonials Options", "Testimonials Options", "manage_options", "dohko-testimonials-options", "dohko_testimonials_options_page");
     add_submenu_page("dohko-theme-options", "Contact Options", "Contact Options", "manage_options", "dohko-contact-options", "dohko_contact_options_page");
     add_submenu_page("dohko-theme-options", "Home-About Options", "Home-About Options", "manage_options", "dohko-home-about-options", "dohko_home_about_options_page");
     add_submenu_page("dohko-theme-options", "About Us Options", "About Us Options", "manage_options", "dohko-about-us-options", "dohko_about_us_options_page");
@@ -78,7 +79,27 @@
     register_setting( 'dohko-settings-home-about', 'dohko_msg_p3' );
     register_setting( 'dohko-settings-home-about', 'dohko_msg_p4' );
     register_setting( 'dohko-settings-products', 'dohko_cf_txt_msg_product' );
-    
+    register_setting( 'dohko-settings-testimonials', 'dohko_t1' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t2' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t3' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t4' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t5' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t6' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t7' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t8' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t9' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t10' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t1_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t2_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t3_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t4_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t5_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t6_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t7_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t8_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t9_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_t10_a' );
+    register_setting( 'dohko-settings-testimonials', 'dohko_video_testi' );
   }
 
   function dohko_header_options_page(){
@@ -124,6 +145,124 @@
         <div valign="top">
           <div scope="row">Description Text P4:</th>
             <textarea name="dohko_msg_p4" style="width:100%; height:100px;"><?php print get_option('dohko_msg_p4'); ?></textarea>
+          </div>
+        </div>
+        <p class="submit">
+          <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+        </p>
+      </form>
+    </div>
+  <?php }
+
+  function dohko_testimonials_options_page(){
+  ?>
+    <div class="wrap">
+      <h2>Dohko Testimonials Options</h2>
+      <form method="post" action="options.php">
+        <?php settings_fields( 'dohko-settings-testimonials' ); ?>
+        <div valign="top">
+          <div scope="row">Testimonial 1:</th>
+            <textarea name="dohko_t1" style="width:100%; height:100px;"><?php print get_option('dohko_t1'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 1:</th>
+            <textarea name="dohko_t1_a" style="width:100%;"><?php print get_option('dohko_t1_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 2:</th>
+            <textarea name="dohko_t2" style="width:100%; height:100px;"><?php print get_option('dohko_t2'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 2:</th>
+            <textarea name="dohko_t2_a" style="width:100%;"><?php print get_option('dohko_t2_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 3:</th>
+            <textarea name="dohko_t3" style="width:100%; height:100px;"><?php print get_option('dohko_t3'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 3:</th>
+            <textarea name="dohko_t3_a" style="width:100%;"><?php print get_option('dohko_t3_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 4:</th>
+            <textarea name="dohko_t4" style="width:100%; height:100px;"><?php print get_option('dohko_t4'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 4:</th>
+            <textarea name="dohko_t4_a" style="width:100%;"><?php print get_option('dohko_t4_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 5:</th>
+            <textarea name="dohko_t5" style="width:100%; height:100px;"><?php print get_option('dohko_t5'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 5:</th>
+            <textarea name="dohko_t5_a" style="width:100%;"><?php print get_option('dohko_t5_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 6:</th>
+            <textarea name="dohko_t6" style="width:100%; height:100px;"><?php print get_option('dohko_t6'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 6:</th>
+            <textarea name="dohko_t6_a" style="width:100%;"><?php print get_option('dohko_t6_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 7:</th>
+            <textarea name="dohko_t7" style="width:100%; height:100px;"><?php print get_option('dohko_t7'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 7:</th>
+            <textarea name="dohko_t7_a" style="width:100%;"><?php print get_option('dohko_t7_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 8:</th>
+            <textarea name="dohko_t8" style="width:100%; height:100px;"><?php print get_option('dohko_t8'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 8:</th>
+            <textarea name="dohko_t8_a" style="width:100%;"><?php print get_option('dohko_t8_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 9:</th>
+            <textarea name="dohko_t9" style="width:100%; height:100px;"><?php print get_option('dohko_t9'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 9:</th>
+            <textarea name="dohko_t9_a" style="width:100%;"><?php print get_option('dohko_t9_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial 10:</th>
+            <textarea name="dohko_t10" style="width:100%; height:100px;"><?php print get_option('dohko_t10'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Testimonial Author 10:</th>
+            <textarea name="dohko_t10_a" style="width:100%;"><?php print get_option('dohko_t10_a'); ?></textarea>
+          </div>
+        </div>
+        <div valign="top">
+          <div scope="row">Video Testimonial:</th>
+              <input type="text" name="dohko_video_testi" style="width:100%;" value="<?php print get_option('dohko_video_testi'); ?>" />
           </div>
         </div>
         <p class="submit">
